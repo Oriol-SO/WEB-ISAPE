@@ -43,8 +43,8 @@ export default{
             links:[
                 {name:'inicio',link:'/inicio' },
                 {name:'nosotros',link:'/nosotros'},
-                {name:'servicios',link:''},
-                {name:'contacto',link:''},
+                {name:'servicios',link:'/servicios'},
+                {name:'contacto',link:'/contacto'},
             ],
         }
         
