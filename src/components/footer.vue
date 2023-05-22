@@ -17,10 +17,10 @@
             </div>
 
             <p class="footer-links">
-                <v-btn text small dark to="/inicio" >Inicio</v-btn>
-                <v-btn text small dark to="/nosotros">Nosotros</v-btn>
-                <v-btn text small dark to="/servicios">Servicios</v-btn>
-                <v-btn text small dark to="/contacto">Contacto</v-btn>                
+                <v-btn text small dark to="/inicio" class="py-2" >Inicio</v-btn>
+                <v-btn text small dark to="/nosotros" class="py-2">Nosotros</v-btn>
+                <v-btn text small dark to="/servicios" class="py-2">Servicios</v-btn>
+                <v-btn text small dark to="/contacto" class="py-2">Contacto</v-btn>                
             </p>
 
             <p class="footer-company-name">Todos los derechos reservados © 2023</p>

@@ -22,7 +22,7 @@ export default{
   },
   data(){
     return{
-      rutas:['/inicio','/nosotros','/servicios','/contacto']
+      rutas:['/inicio','/nosotros',]//'/servicios','/contacto']
     }
 
   },
