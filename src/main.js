@@ -4,9 +4,14 @@ import vuetify from './plugins/vuetify'
 import router from './router'
 import VueMeta from 'vue-meta'
 import store from './store'
+
 Vue.config.devtools = false;
 Vue.config.productionTip=false;
+
+import './map'
+
 Vue.use(VueMeta);
+
 new Vue({
   router,
   vuetify,

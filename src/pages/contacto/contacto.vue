@@ -101,26 +101,35 @@
                             </v-card-text>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" md="7">
-
+                    <v-col cols="12" md="7" class="d-flex justify-center align-center">
+                        <div style="width: 90%; height: 500px;">
+                            <mapa />
+                        </div>
+                       
                     </v-col>
                 </v-row>
            </v-container>
-     
+           <div class="mt-16">
+
+           </div>
         </div>
     </div>
 </template>
 
 <script>
+import mapa from '../../components/mapa.vue'
 export default{
+    components:{
+        mapa,
+    },
     data(){
-            return{
-                nombre:'',
-                correo:'',
-                asunto:'',
-                mensaje:'',
-    
-            }
+        return{
+            nombre:'',
+            correo:'',
+            asunto:'',
+            mensaje:'',
+
+        }
     },
     methods:{
         submit(){
