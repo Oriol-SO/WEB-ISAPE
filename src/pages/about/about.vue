@@ -1,7 +1,7 @@
 <template>
     <div :class="$store.state.About?'animacion-about':''">
         <v-img
-        src="https://latam.portalerp.com/images/2022/04/14/industria-4-0png.png"
+        src="https://diarioresponsable.com/images/empresas_ecovadis_DR.jpg"
         :aspect-ratio="16/5"
         style="  height: 40vh ; magin:0; background-size: cover;" 
         gradient="to bottom,rgb(255 255 255), rgb(184 195 255 / 53%)"
@@ -105,12 +105,13 @@
                 </v-col>
             </v-row>
             <div class="px-10">
-                <v-card-title class="text-h3 my-4">
+                <v-card-title class="text-h3 my-4 d-flex justify-center">
                     ¿Por que elegirnos?
                 </v-card-title>
                 <v-card elevation="0">
                     <v-row>
-                        <v-col cols="12" md="3" sm="6" v-for="(item,i) in items" :key="i" >
+                        <v-col cols="12" md="3" sm="6" class="d-flex justify-center"
+                        v-for="(item,i) in items" :key="i" >
                             <div class="card ">
                                 <div class="circle" :style="'background-color:'+item.color">
                                     <h2>{{item.title}}</h2>
@@ -126,6 +127,12 @@
             </div>
             
             <div>
+                <v-card-title class="text-h3 my-4 d-flex justify-center">
+                  Nuestros valores 
+                </v-card-title>
+                <div>
+                    <valores/>
+                </div>
 
             </div>
         </div>
@@ -133,7 +140,11 @@
 </template>
 
 <script>
+import valores from '../../components/valores.vue'
 export default{
+    components:{
+        valores,
+    },
     metaInfo(){
         return{title:'Nosotros'}
     },
@@ -209,12 +220,5 @@ export default{
     color: #666;
 }
 
-
- .card:hover {
-    transform: scale(1.1);
-    opacity: 1;
-    z-index: 3;
-    position: absolute;
-}
 
 </style>

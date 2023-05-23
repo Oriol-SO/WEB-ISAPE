@@ -7,7 +7,7 @@ export default [
     { path: '/inicio', name: 'home', component: page('home/home.vue') },
     { path: '/nosotros',name:'nosotros' ,component: page('about/about.vue')},
     //{ path: '/servicios',name:'servicios' ,component: page('servicios/servicios.vue')},
-    //{ path: '/contacto',name:'contacto' ,component: page('contacto/contacto.vue')},
+    { path: '/contacto',name:'contacto' ,component: page('contacto/contacto.vue')},
 
     { path: '*',name:'error', component: page('errors/404.vue') },
 ]  

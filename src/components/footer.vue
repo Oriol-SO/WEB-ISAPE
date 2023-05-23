@@ -40,7 +40,7 @@
 
             <div>
                 <v-icon>mdi-email</v-icon>
-                <p><a href="mailto:empresa@isape.com.pe">Escribenos</a></p>
+                <p><a href="mailto:gerencia@isapesac.com">Escribenos</a></p>
             </div>
 
         </div>
