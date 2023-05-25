@@ -121,7 +121,7 @@
                                         type="submit"
                                         :loadin="loader"
                                         :disabled="loader"
-                                        >Enviar mensaje
+                                        >Enviar mensajes
                                         </v-btn>
                                   
                                     </v-card-actions>
