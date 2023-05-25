@@ -63,39 +63,67 @@
                             </v-card-title>
                             <v-card-text>
                                 <form @submit.prevent="submit">
-                                    <v-row>
+                                    <v-row class="py-0 my-0">
                                         <v-col
                                             cols="12"
+                                            class="py-0"
                                         >
                                             <v-text-field
                                             label="Nombre y Apellidos"
                                             required
                                             outlined
+                                            dense
+                                            v-model="form.nombre"
                                             ></v-text-field>
                                      
                                             <v-text-field
                                             label="correo"
+                                            dense
                                             required
+                                            type="email"
                                             outlined
+                                            v-model="form.correo"
                                             ></v-text-field>
                                   
                                             <v-text-field
                                             label="asunto"
                                             outlined
+                                            dense
                                             required
+                                            v-model="form.subject"
                                             ></v-text-field>
                                             <v-textarea
                                             label="Mensaje"
                                             auto-grow
                                             required
+                                            dense
+                                            outlined
+                                            v-model="form.mensaje"
                                             >
                                             </v-textarea>
                                         </v-col>
                                     </v-row>
+                                    <v-alert 
+                                        :type="type"
+                                        :color="color"
+                                        dense 
+                                        dismissible
+                                        class="mx-auto my-0 py-o"
+                                        v-if="mensaje"
+                                        >
+                                            {{ mensaje }}
+                                            {{ verificaralert }}
+                                    </v-alert>
                                     <v-card-actions>
                                         <v-btn
+                                        color="warning"
+                                        class="text-capitalize"
                                         type="submit"
-                                        >Enviar</v-btn>
+                                        :loadin="loader"
+                                        :disabled="loader"
+                                        >Enviar mensaje
+                                        </v-btn>
+                                  
                                     </v-card-actions>
                                 </form>
                             </v-card-text>
@@ -124,22 +152,61 @@ export default{
     },
     data(){
         return{
-            nombre:'',
-            correo:'',
-            asunto:'',
+            form:{
+                nombre:'',
+                correo:'',
+                subject:'',
+                mensaje:'',
+            },
+            loader:false,
             mensaje:'',
-
+            type:'',
+            color:'',
         }
     },
     methods:{
-        submit(){
-            const formData = new FormData();
-            formData.append('nombre', this.nombre);
-            formData.append('correo', this.correo);
-            formData.append('asunto', this.asunto);
-            formData.append('mensaje',this.mensaje);
+        async submit(){
+            try{
+                this.loader=true;
+                this.type='success'
+                this.color='green accent-3'
+                this.mensaje='';
+                const response = await fetch('https://formspree.io/f/xpzeelqj', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(this.form)
+                });
+                if (response.ok) {
+                    this.mensaje = 'Mensaje enviado';
+                    this.loader=false;
+                    this.form.correo = '';
+                    this.form.subject = '';
+                    this.form.mensaje = '';
+                } else {
+                    throw new Error('Error en el envío del formulario');
+                }
+            }catch(error){
+                this.mensaje = 'Error al enviar el mensaje';
+                this.type='error'
+                this.color='red'
+                this.loader=false;
+            }
+        },
 
-            console.log(formData)
+        desctivaralert(){
+            setTimeout(() => {
+                this.mensaje ='';
+            },3000);
+        }
+    },
+    computed:{
+        verificaralert(){
+            if(this.mensaje && !this.loader){
+               this.desctivaralert()
+            }
+            return '.';
         }
     }
 }

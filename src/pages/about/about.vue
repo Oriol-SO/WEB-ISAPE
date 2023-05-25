@@ -1,7 +1,7 @@
 <template>
     <div :class="$store.state.About?'animacion-about':''">
         <v-img
-        src="https://diarioresponsable.com/images/empresas_ecovadis_DR.jpg"
+        src="/img/nosotros.jpg"
         :aspect-ratio="16/5"
         style="  height: 40vh ; magin:0; background-size: cover;" 
         gradient="to bottom,rgb(255 255 255), rgb(184 195 255 / 53%)"
