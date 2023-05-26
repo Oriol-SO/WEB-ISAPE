@@ -72,7 +72,7 @@ export default{
                 '/img/socios/sgs.jpg',
                 '/img/socios/stanley.jpg',
                 '/img/socios/tramontina.jpg',
-                '/img/socios/victor.jpg',
+                '/img/socios/victorl.jpg',
             ]
         }
     },
