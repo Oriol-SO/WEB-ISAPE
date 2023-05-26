@@ -46,9 +46,8 @@
                                 </v-btn> 
                             </v-card-text>
                             <v-card-text class="redesso">
+                              <a  v-for="(item,i) in redes"  :key="i" :href="item.link" target="_blank">
                                 <v-btn
-                                v-for="(item,i) in redes"
-                                :key="i"
                                 class="mx-4 white--text"
                                 color="orange"
                                 fab
@@ -59,6 +58,8 @@
                                     {{ item.icon}}
                                 </v-icon>
                                 </v-btn>
+                                                              
+                              </a>
                             </v-card-text>
                         </div>
                     </v-col>
@@ -81,9 +82,9 @@ export default{
     data(){
         return{ 
             redes:[
-                {icon:'mdi-facebook',link:''},
-                {icon:'mdi-linkedin',link:''},
-                {icon:'mdi-instagram',link:''},
+                {icon:'mdi-facebook',link:'https://www.facebook.com/'},
+                {icon:'mdi-linkedin',link:'https://www.linkedin.com/'},
+                {icon:'mdi-whatsapp',link:'https://wa.me/+51995484268'},
             ],
 
         }

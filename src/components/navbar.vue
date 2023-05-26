@@ -90,8 +90,10 @@ export default{
                 {name:'contacto',link:'/contacto',icon:'mdi-contacts'},
             ],
             drawer:false,
-        }
-        
+        }        
+    },computed:{
+
+    
     }
 }
 </script>
@@ -106,6 +108,9 @@ export default{
 }
 .theme--light.v-tabs > .v-tabs-bar {
     background-color:transparent
+}
+.theme--dark.v-tabs > .v-tabs-bar {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 </style>

@@ -35,7 +35,8 @@
 
             <div>
                 <v-icon>mdi-phone</v-icon>
-                <p>+51 987 654 321</p>
+                <p>+51 963 903 492 <br> +51 941 706 977</p>
+
             </div>
 
             <div>
@@ -57,7 +58,7 @@
 
                 <a href="https://www.facebook.com/" target="_blank"><v-icon dark>mdi-facebook</v-icon></a>
                 <a href="https://www.instagram.com/" target="_blank"><v-icon dark>mdi-instagram</v-icon></a>
-                <a href="https://wa.me/+51995484268?text=Hola somos ISAPE, Si necesitas mas informació escribenos" target="_blank"><v-icon dark>mdi-whatsapp</v-icon></a>
+                <a href="https://wa.me/+51995484268" target="_blank"><v-icon dark>mdi-whatsapp</v-icon></a>
                 <a href="https://www.linkedin.com/" target="_blank"><v-icon dark >mdi-linkedin</v-icon></a>
 
             </div>
