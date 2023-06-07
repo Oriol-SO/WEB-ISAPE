@@ -1,7 +1,7 @@
 <template>
     <div class="contenedor-carousel">
       <v-carousel 
-      height="650px"
+      height="700px"
       show-arrows-on-hover
       v-model="option"
       >
@@ -16,7 +16,7 @@
                class="white--text" 
                >
                <v-responsive
-                class="d-flex align-start mx-10 "
+                class="d-flex align-start mx-2 "
                 height="100%"
                 max-width="100%"  
 
@@ -261,7 +261,7 @@ export default{
 
 @media (max-width: 570px) {
     .contenedor-carousel .v-window,.v-window__container{
-        height: 750px !important;
+        height: 780px !important;
     }
 
 }
