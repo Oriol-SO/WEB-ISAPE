@@ -36,6 +36,7 @@
                                 </v-avatar>
                                 <div class="d-flex align-center" style="flex-direction: column;">
                                     <strong>Telefonos</strong> 
+                                    <span style="color:#0d70b7"> +51 995 484 268</span>
                                     <span style="color:#0d70b7;">+51 963 903 492</span>    
                                     <span style="color:#0d70b7;">+51 941 706 977</span>     
                                 </div>

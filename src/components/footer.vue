@@ -23,7 +23,7 @@
                 <v-btn text small dark to="/contacto" class="py-2">Contacto</v-btn>                
             </p>
 
-            <p class="footer-company-name">Todos los derechos reservados © 2023</p>
+            <p class="footer-company-name">Todos los derechos reservados isape-sac.com ©  {{ new Date().getFullYear() }} </p>
         </div>
 
         <div class="footer-center">
@@ -35,7 +35,7 @@
 
             <div>
                 <v-icon>mdi-phone</v-icon>
-                <p>+51 963 903 492 <br> +51 941 706 977</p>
+                <p>+51 963 903 492 <br>+51 995 484 268<br> +51 941 706 977 </p>
 
             </div>
 

@@ -1,7 +1,7 @@
 <template>
     <div  :class="$store.state.Home?'animacion-fondo':''" >
        <v-img
-        src="/img/fondo.jpg"
+        src="/img/fondo2.webp"
         style="  height: 100vh ; magin:0; background-size: cover;" 
         gradient="to bottom,rgb(255 255 255), rgb(184 195 255 / 53%)"
         class="white--text "
