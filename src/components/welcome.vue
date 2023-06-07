@@ -49,7 +49,7 @@
                               <a  v-for="(item,i) in redes"  :key="i" :href="item.link" target="_blank">
                                 <v-btn
                                 class="mx-4 white--text"
-                                color="orange"
+                                :color="item.color"
                                 fab
                                 small
                                 dark
@@ -82,9 +82,9 @@ export default{
     data(){
         return{ 
             redes:[
-                {icon:'mdi-facebook',link:'https://www.facebook.com/'},
-                {icon:'mdi-linkedin',link:'https://www.linkedin.com/'},
-                {icon:'mdi-whatsapp',link:'https://wa.me/+51995484268'},
+                {icon:'mdi-facebook',link:'https://www.facebook.com/',color:'#0e8ef1'},
+                {icon:'mdi-linkedin',link:'https://www.linkedin.com/',color:'#0a66c2'},
+                {icon:'mdi-whatsapp',link:'https://wa.me/+51995484268',color:'green accent-3'},
             ],
 
         }
