@@ -8,7 +8,7 @@ export default{
     aura,
   },
   metaInfo () {
-        return { title: 'Inicio' }
+        return { title: 'Inicio -' }
   },
 
 

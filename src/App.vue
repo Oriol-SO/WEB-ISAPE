@@ -34,7 +34,7 @@ export default{
   },
   metaInfo () {
     return {
-      titleTemplate: `%s - ISAPE`
+      titleTemplate: `%s ISAPE`
     }
   },computed:{
     verificar(){

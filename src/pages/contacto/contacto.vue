@@ -151,6 +151,9 @@ export default{
     components:{
         mapa,
     },
+    metaInfo () {
+        return { title: 'Contacto -' }
+    },
     data(){
         return{
             form:{

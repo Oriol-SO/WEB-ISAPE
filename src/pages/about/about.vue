@@ -154,7 +154,7 @@ export default{
         valores,
     },
     metaInfo(){
-        return{title:'Nosotros'}
+        return{title:'Nosotros -'}
     },
     mounted(){
         this.$store.commit('disableloader','About')

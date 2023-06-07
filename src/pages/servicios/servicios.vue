@@ -55,6 +55,9 @@ export default{
     components:{
         servicios,
     },
+    metaInfo () {
+        return { title: 'Servicios -' }
+    },
     data(){
         return{
             socios:[
